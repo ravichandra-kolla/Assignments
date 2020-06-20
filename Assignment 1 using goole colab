@@ -1,0 +1,412 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyM2uBh1ulC2Bic7J4a4emh6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ravichandra-kolla/Assignments/blob/master/Assignment%201%20using%20goole%20colab\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZhfhaUgMO4pW",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Assignment 1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tanwYDfRPDaG",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 1.operators"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ASkc2ubtPASH",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 181
+        },
+        "outputId": "ffc06b75-1e8e-4361-e13b-8227bb2a2ee0"
+      },
+      "source": [
+        "x=int(input('enter the number'))\n",
+        "y=int(input('enter the number'))\n",
+        "print(x+y)\n",
+        "print(x-y)\n",
+        "print(x*y)\n",
+        "print(x/y)\n",
+        "print(x%y)\n",
+        "print(x**y)\n",
+        "print(x//y)\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the number6\n",
+            "enter the number7\n",
+            "13\n",
+            "-1\n",
+            "42\n",
+            "0.8571428571428571\n",
+            "6\n",
+            "279936\n",
+            "0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9fh3z1wSQi5T",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 2.simple interest"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "VMpmkGu7Qgay",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 90
+        },
+        "outputId": "4273eeb0-2655-470d-94a6-3d90c9d277b9"
+      },
+      "source": [
+        "p=int(input(\"Enter principle amount:\"))\n",
+        "t=int(input(\"Enter the time duration(In years):\"))\n",
+        "r=int(input(\"Enter the interest rate:\"))\n",
+        "print(\"Simple interest is:\",((p*t*r)/100))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter principle amount:5\n",
+            "Enter the time duration(In years):3\n",
+            "Enter the interest rate:1\n",
+            "Simple interest is: 0.15\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "G3gRVNTsPBVQ",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 3.Area of a circle"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Z26tc0K8uCFk",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "80ca250e-9c76-4959-b083-4f18748de2d1"
+      },
+      "source": [
+        "r=int(input(\"Enter the radius of the circle:\"))\n",
+        "print(\"Area of the circle is:\",(3.14*r*r))"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the radius of the circle:3\n",
+            "Area of the circle is: 28.259999999999998\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7_EPCkPe17Wi",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 4.Area of the triangle"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kr6jxGs2ufzK",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 145
+        },
+        "outputId": "8371683c-1cea-4bbb-c730-44833091d619"
+      },
+      "source": [
+        "b=int(input(\"Enter the length of base of a Triangle:\"))\n",
+        "h=int(input(\"Enter the length of height of a Triangle:\"))\n",
+        "print(\"Area of triangle is:\",((b*h)/2),\"square units\")\n",
+        "a=int(input(\"Enter the side one of triangle:\"))\n",
+        "b=int(input(\"Enter the side two of triangle:\"))\n",
+        "c=int(input(\"Enter the side three of triangle:\"))\n",
+        "s=((a+b+c)/2)\n",
+        "d=((s*(s-a)*(s-b)*(s-c))**0.5)\n",
+        "print(f\"Area of Triangle of sides {a}, {b}, {c} is {d} square units\")"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the length of base of a Triangle:4\n",
+            "Enter the length of height of a Triangle:5\n",
+            "Area of triangle is: 10.0 square units\n",
+            "Enter the side one of triangle:4\n",
+            "Enter the side two of triangle:7\n",
+            "Enter the side three of triangle:8\n",
+            "Area of Triangle of sides 4, 7, 8 is 13.997767679169419 square units\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uQt_VFTp-49_",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 5.Temperature in Celsius to Fahrenheit."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "udM-dLcn-Ch0",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "64b94116-3e83-40ed-a046-6956ba5bfe6e"
+      },
+      "source": [
+        "\n",
+        "c=int(input(\"Enter the temperature in Celsius:\"))\n",
+        "print(\"Temperature in Fahrenheit is:\",(((c*9)/5)+32))\n"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the temperature in Celsius:36\n",
+            "Temperature in Fahrenheit is: 96.8\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "K31MxvcG_32D",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 6.Area of rectangle."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "UGY4-mqy_zxx",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 72
+        },
+        "outputId": "8805afd1-3cdb-470f-d138-0f0eb2619615"
+      },
+      "source": [
+        "l=int(input(\"Enter the length of the rectangle:\"))\n",
+        "b=int(input(\"Enter the breadth of the rectangle:\"))\n",
+        "print(\"Area of Rectangle is:\",(l*b))\n"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the length of the rectangle:6\n",
+            "Enter the breadth of the rectangle:8\n",
+            "Area of Rectangle is: 48\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "9ljnxXNpAFqM",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 7.Perimeter of a square."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9EigV27qABuW",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "b87653d8-2f31-4830-ba8e-7e61f566c797"
+      },
+      "source": [
+        "s=int(input(\"Enter the side of the Square:\"))\n",
+        "print(\"Perimeter of the Square is:\",(4*s))"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the side of the Square:6\n",
+            "Perimeter of the Square is: 24\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "g_VIkniLAUWX",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 8.Circumference of a circle."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "UeEZGnGLAQse",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "caa08b48-83fb-406e-b173-d77205a1a768"
+      },
+      "source": [
+        "r=int(input(\"Enter the radius of the circle:\"))\n",
+        "print(\"Circumference of the circle is:\",(3.14*2*r))"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the radius of the circle:4\n",
+            "Circumference of the circle is: 25.12\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PmHH16a3AfFi",
+        "colab_type": "text"
+      },
+      "source": [
+        "## 9.Swap two numbers.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LRidTefgAcar",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 90
+        },
+        "outputId": "5ac441f7-481a-4d3e-9ead-66c86cb52358"
+      },
+      "source": [
+        "a=int(input(\"Enter a number:\"))\n",
+        "b=int(input(\"Enter a number:\"))\n",
+        "print (\"values before Swapping\",a,b)\n",
+        "temp=a\n",
+        "a=b\n",
+        "b=temp\n",
+        "print(\"Values after Swapping\",a,b)\n"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number:5\n",
+            "Enter a number:6\n",
+            "values before Swapping 5 6\n",
+            "Values after Swapping 6 5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
