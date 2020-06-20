@@ -1,0 +1,77 @@
+1.operators
+
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a**b)
+print(a//b)
+
+
+2.simple interest
+
+p=int(input("Enter principle amount:"))
+t=int(input("Enter the time duration(In years):"))
+r=int(input("Enter the interest rate:"))
+print("Simple interest is:",((p*t*r)/100))
+
+
+3.Area of the circle
+
+r=int(input("Enter the radius of the circle:"))
+print("Area of the circle is:",(3.14*r*r))
+
+
+4.Area of the triangle
+
+b=int(input("Enter the length of base of a Triangle:"))
+h=int(input("Enter the length of height of a Triangle:"))
+print("Area of triangle is:",((b*h)/2),"square units")
+a=int(input("Enter the side one of triangle:"))
+b=int(input("Enter the side two of triangle:"))
+c=int(input("Enter the side three of triangle:"))
+s=((a+b+c)/2)
+d=((s*(s-a)*(s-b)*(s-c))**0.5)
+print(f"Area of Triangle of sides {a}, {b}, {c} is {d} square units")
+
+
+5.Temperature in Celsius to Fahrenheit.
+
+c=int(input("Enter the temperature in Celsius:"))
+print("Temperature in Fahrenheit is:",(((c*9)/5)+32))
+
+
+6.Area of rectangle.
+
+l=int(input("Enter the length of the rectangle:"))
+b=int(input("Enter the breadth of the rectangle:"))
+print("Area of Rectangle is:",(l*b))
+
+
+7.Perimeter of a square.
+
+s=int(input("Enter the side of the Square:"))
+print("Perimeter of the Square is:",(4*s))
+
+
+
+8.Circumference of a circle.
+
+r=int(input("Enter the radius of the circle:"))
+print("Circumference of the circle is:",(3.14*2*r))
+
+
+
+9.Swap two numbers.
+
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+print ("values before Swapping",a,b)
+temp=a
+a=b
+b=temp
+print("Values after Swapping",a,b)
+
