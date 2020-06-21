@@ -64,7 +64,7 @@ else:
 	print('number is negative')
 
 
-## 7.print the number in words
+## 7.print the number in words without using nested if 
 x={1:"one",2:"two",3:"three",4:"four",5:"five"}
 p=[1,2,3,4,5]
 n=int(input('enter the number in between 1-5'))
@@ -72,7 +72,23 @@ if (n in p):
 	print(f'number in words is {x[n]}')
 else:
 	print('the nunber is not in between 1-5 try again')
-	
+
+## 7.print the number in words using nested if
+n=int(input('enter the number in between 1-5'))
+if (n <6):
+	if n==1:
+		print('one')
+	elif(n==2):
+		print('two')
+	elif(n==3):
+		print('three')
+	elif(n==4):
+		print('four')
+	elif(n==5):
+		print('five')
+else:
+	print(n,'is not in between 1-5')
+
 	
 
 ## 8.vowel or consonant
