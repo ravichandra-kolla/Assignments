@@ -1,0 +1,43 @@
+#Assignment 2
+
+## 1.Addition of two numbers
+
+a=int(input("enter the value a:"))
+b=int(input("enter the value b:"))
+c=a+b
+print("addition of two numbers is",c)
+
+
+
+## 2.Gross pay
+
+h=float(input("enter hours:"))
+r=float(input("enter rate:"))
+pay=h*r
+print("gross pay=",pay)
+
+
+
+## 3.Welcome the user 
+
+name=str(input("enter your name"))
+print(name,"welcome")
+
+
+
+## 4.Assignment statementa
+
+width=17
+height=12
+a=width//2
+b=width/2
+c=height/3
+d=1+2*5
+print(a,b,c,d)
+
+
+## 5.Celcius coverting into fahrenheit
+
+celcius=int(input("enter celcius"))
+fahrenheit=celcius*1.8+32
+print("after converting:",fahrenheit)
