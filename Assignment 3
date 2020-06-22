@@ -18,7 +18,7 @@ else:
 ## 3.Number is prime or not
 n=int(input('enter the number'))
 j=0
-for i in range(2,n+1):
+for i in range(1,n):
 	
 	if n%i==0:
 		j+=1
@@ -33,7 +33,7 @@ else:
 ## 4.Number is positive or not
 n=int(input('enter a number'))
 if n>0:
-	print(f'{n} is positive number')
+	print(n,' is positive number')
 else:
 	print('negative number')
 
