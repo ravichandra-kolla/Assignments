@@ -2,7 +2,7 @@
 ## 1.Eligible for voting or not
 age =int(input('enter your age'))
 if age >=18:
-    print ('you are eligible for vote')
+        print ('you are eligible for vote')
 else :
 	print ('you are not eligible for vote')
 
@@ -48,9 +48,7 @@ if d==0:
 elif( d>0):
 	print(f'roots are real and distent are : {(-b+(d**0.5))/(2*a)},{(-b-(d**0.5))/(2*a)}')
 else:
-    
-    y=x=(-b)/(2*a)
-    print(f'roots are imaginary they are {x}+{-(d/(2*a))}i and {y}-{-(d/(2*a))}i')
+        print(f'roots are imaginary they are {(-b)/(2*a)}+{-(d/(2*a))}i and {(-b)/(2*a)}-{-(d/(2*a))}i')
     
     
 
@@ -66,12 +64,12 @@ else:
 
 ## 7.print the number in words without using nested if 
 x={1:"one",2:"two",3:"three",4:"four",5:"five"}
-p=[1,2,3,4,5]
 n=int(input('enter the number in between 1-5'))
-if (n in p):
+if (n<6):
 	print(f'number in words is {x[n]}')
 else:
 	print('the nunber is not in between 1-5 try again')
+
 
 ## 7.print the number in words using nested if
 n=int(input('enter the number in between 1-5'))
